@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+axios.defaults.baseURL = 'http://localhost:3010';
+
 const request = {
   getReservations: callback => {
     let id = window.location.href.split('/')[4];

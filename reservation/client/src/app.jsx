@@ -294,8 +294,3 @@ export default class Reservation extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  React.createElement(Reservation),
-  document.getElementById('Reservation')
-);
