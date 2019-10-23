@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
+const styled = window.styled;
 
 const Wrapper = styled.div`
   .background {
@@ -45,31 +45,31 @@ const Text = styled.div`
 const Confirmation = props => {
   return (
     <Wrapper>
-      <div className="background"></div>
-      <div className="dialogue">
+      <div className='background'></div>
+      <div className='dialogue'>
         <button
           onClick={() => {
             props.handleReserveClick(false);
           }}
         >
-          <svg height="15" width="15">
+          <svg height='15' width='15'>
             <line
-              x1="0"
-              x2="15"
-              y1="0"
-              y2="15"
-              stroke="black"
-              strokeWidth="0.7"
-              strokeLinecap="butt"
+              x1='0'
+              x2='15'
+              y1='0'
+              y2='15'
+              stroke='black'
+              strokeWidth='0.7'
+              strokeLinecap='butt'
             ></line>
             <line
-              x1="15"
-              x2="0"
-              y1="0"
-              y2="15"
-              stroke="black"
-              strokeWidth="0.7"
-              strokeLinecap="butt"
+              x1='15'
+              x2='0'
+              y1='0'
+              y2='15'
+              stroke='black'
+              strokeWidth='0.7'
+              strokeLinecap='butt'
             ></line>
           </svg>
         </button>

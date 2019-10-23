@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendar from './calendar';
-import styled from 'styled-components';
+const styled = window.styled;
 
 const Wrapper = styled.div`
   padding: 5px 0px;
@@ -47,54 +47,54 @@ const Dates = props => (
     <Label>Dates</Label>
     <InputWrapper>
       <Input
-        id="calInput"
+        id='calInput'
         cal={props.cal}
         checkIn={props.checkIn}
         onClick={() => {
           props.displayCal('checkIn');
         }}
-        type="text"
+        type='text'
         readOnly
         value={props.checkIn}
       />
-      <svg width="30px" height="20px">
+      <svg width='30px' height='20px'>
         <line
-          x1="0"
-          x2="30"
-          y1="10"
-          y2="10"
-          stroke="black"
-          strokeWidth=".70"
-          strokeLinecap="butt"
+          x1='0'
+          x2='30'
+          y1='10'
+          y2='10'
+          stroke='black'
+          strokeWidth='.70'
+          strokeLinecap='butt'
         />
         <line />
         <line
-          x1="20"
-          x2="30"
-          y1="18"
-          y2="10"
-          stroke="black"
-          strokeWidth=".70"
-          strokeLinecap="butt"
+          x1='20'
+          x2='30'
+          y1='18'
+          y2='10'
+          stroke='black'
+          strokeWidth='.70'
+          strokeLinecap='butt'
         ></line>
         <line
-          x1="30"
-          x2="20"
-          y1="10"
-          y2="2"
-          stroke="black"
-          strokeWidth=".70"
-          strokeLinecap="butt"
+          x1='30'
+          x2='20'
+          y1='10'
+          y2='2'
+          stroke='black'
+          strokeWidth='.70'
+          strokeLinecap='butt'
         ></line>
       </svg>
       <Input
-        id="calInput"
+        id='calInput'
         cal={props.cal}
         checkOut={props.checkOut}
         onClick={() => {
           props.displayCal('checkOut');
         }}
-        type="text"
+        type='text'
         readOnly
         value={props.checkOut}
       />

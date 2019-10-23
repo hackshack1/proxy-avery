@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
-import styled from 'styled-components';
 import Day from './day';
+const styled = window.styled;
 
 const Wrapper = styled.div`
   border: 1px solid #dedede;
@@ -295,7 +295,7 @@ class Calendar extends React.Component {
     let end = 7;
 
     for (let k = 0; k < firstDay; k++) {
-      days.push(<Day key={`b${k}`} day="" />);
+      days.push(<Day key={`b${k}`} day='' />);
     }
 
     for (let k = 1; k <= lastDate; k++) {
@@ -368,34 +368,34 @@ class Calendar extends React.Component {
           }}
         >
           {' '}
-          <svg width="20px" height="20px">
+          <svg width='20px' height='20px'>
             <line
-              x1="0"
-              x2="20"
-              y1="10"
-              y2="10"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='0'
+              x2='20'
+              y1='10'
+              y2='10'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             />
             <line />
             <line
-              x1="0"
-              x2="5"
-              y1="10"
-              y2="15"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='0'
+              x2='5'
+              y1='10'
+              y2='15'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             ></line>
             <line
-              x1="0"
-              x2="5"
-              y1="10"
-              y2="5"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='0'
+              x2='5'
+              y1='10'
+              y2='5'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             ></line>
           </svg>
         </LeftButton>
@@ -403,7 +403,7 @@ class Calendar extends React.Component {
           slideLeft={this.state.slideLeft}
           slideRight={this.state.slideRight}
         >
-          <label className="slide">
+          <label className='slide'>
             {this.state.month.format('MMMM YYYY')}
           </label>
         </MonthLabel>
@@ -412,34 +412,34 @@ class Calendar extends React.Component {
             this.handleMonthClick('right');
           }}
         >
-          <svg width="20px" height="20px">
+          <svg width='20px' height='20px'>
             <line
-              x1="0"
-              x2="20"
-              y1="10"
-              y2="10"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='0'
+              x2='20'
+              y1='10'
+              y2='10'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             />
             <line />
             <line
-              x1="20"
-              x2="15"
-              y1="10"
-              y2="15"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='20'
+              x2='15'
+              y1='10'
+              y2='15'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             ></line>
             <line
-              x1="20"
-              x2="15"
-              y1="10"
-              y2="5"
-              stroke="black"
-              strokeWidth=".70"
-              strokeLinecap="butt"
+              x1='20'
+              x2='15'
+              y1='10'
+              y2='5'
+              stroke='black'
+              strokeWidth='.70'
+              strokeLinecap='butt'
             ></line>
           </svg>
         </RightButton>
@@ -454,12 +454,12 @@ class Calendar extends React.Component {
               ))}
             </tr>
           </thead>
-          <tbody className="slide">{this.createDays(this.state.month)}</tbody>
+          <tbody className='slide'>{this.createDays(this.state.month)}</tbody>
         </Table>
         {this.props.checkIn !== 'Check-in' ||
         this.props.checkOut !== 'Check-out' ? (
           <button
-            className="clear"
+            className='clear'
             onClick={() => this.props.handleClearClick(this.checkUnavailable)}
           >
             <span>Clear Dates</span>

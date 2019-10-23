@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+const styled = window.styled;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -42,9 +42,9 @@ const TotalPrice = props => {
       <section>
         <span>Occupancy taxes and fees</span> <span>${feesNTaxes}</span>
       </section>
-      <section className="total">
+      <section className='total'>
         <span>Total</span>
-        <span className="totalCost">
+        <span className='totalCost'>
           ${props.newPrice + props.serviceFee + feesNTaxes}
         </span>
       </section>

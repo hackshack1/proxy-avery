@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import GuestDropdown from './guestDropdown';
-import styled from 'styled-components';
+const styled = window.styled;
 
 const Wrapper = styled.div`
   padding: 5px 0px;
@@ -83,7 +83,7 @@ const Guests = props => {
 
   return (
     <Wrapper ref={node}>
-      <label className="field">Guests</label>
+      <label className='field'>Guests</label>
       <Button
         onClick={() => {
           props.handleDropdownClick(!props.displayDropdown);
@@ -93,45 +93,45 @@ const Guests = props => {
           {guestAmt} {infantAmt}
         </span>
         {props.displayDropdown ? (
-          <svg width="16px" height="16px">
+          <svg width='16px' height='16px'>
             <line
-              x1="0"
-              x2="8"
-              y1="8"
-              y2="0"
-              stroke="black"
-              strokeWidth="1.5"
-              strokeLinecap="butt"
+              x1='0'
+              x2='8'
+              y1='8'
+              y2='0'
+              stroke='black'
+              strokeWidth='1.5'
+              strokeLinecap='butt'
             ></line>
             <line
-              x1="15"
-              x2="8"
-              y1="8"
-              y2="0"
-              stroke="black"
-              strokeWidth="1.5"
-              strokeLinecap="butt"
+              x1='15'
+              x2='8'
+              y1='8'
+              y2='0'
+              stroke='black'
+              strokeWidth='1.5'
+              strokeLinecap='butt'
             ></line>
           </svg>
         ) : (
-          <svg width="16px" height="16px">
+          <svg width='16px' height='16px'>
             <line
-              x1="0"
-              x2="8"
-              y1="8"
-              y2="15"
-              stroke="black"
-              strokeWidth="1.5"
-              strokeLinecap="butt"
+              x1='0'
+              x2='8'
+              y1='8'
+              y2='15'
+              stroke='black'
+              strokeWidth='1.5'
+              strokeLinecap='butt'
             ></line>
             <line
-              x1="15"
-              x2="8"
-              y1="8"
-              y2="15"
-              stroke="black"
-              strokeWidth="1.5"
-              strokeLinecap="butt"
+              x1='15'
+              x2='8'
+              y1='8'
+              y2='15'
+              stroke='black'
+              strokeWidth='1.5'
+              strokeLinecap='butt'
             ></line>
           </svg>
         )}

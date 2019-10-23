@@ -7,7 +7,10 @@ module.exports = {
     path: path.join(__dirname, 'public')
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css', '.scss']
+    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
+    alias: {
+      'styled-components': require.resolve('styled-components')
+    }
   },
   module: {
     rules: [
@@ -19,7 +22,10 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
             plugins: [
-              'babel-plugin-styled-components'
+              'babel-plugin-styled-components',
+              {
+                ssr: true
+              }
             ]
           }
         }
