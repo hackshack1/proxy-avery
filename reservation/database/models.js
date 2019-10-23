@@ -56,7 +56,7 @@ const Listing = db.define('listing', {
 
 const Reservation = db.define('reservation', {
   id: {
-    type: Sequelize.INTERGER,
+    type: Sequelize.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },

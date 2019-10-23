@@ -15,12 +15,11 @@ const Wrapper = styled.div`
 const ReservationWrapper = styled.div`
   box-sizing: border-box;
   border: 1px solid #dedede;
-  position: relative;
+  position: sticky;
   z-index: 0;
   display: grid;
   grid-template-columns: 100%;
   width: 400px;
-  float: right;
   padding: 25px;
   margin: 20px 30px;
   grid-gap: 15px;
