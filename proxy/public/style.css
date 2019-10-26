@@ -128,7 +128,7 @@ table {
   border-spacing: 0;
 }
 
-body {
+/* body {
   display: grid;
   grid-template-columns: 65% 35%;
   grid-template-rows: 54vh 1fr;
@@ -147,4 +147,4 @@ body {
 #Reservation {
   grid-column: 2;
   grid-row: 2;
-}
+} */
