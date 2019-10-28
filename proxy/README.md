@@ -10,3 +10,6 @@ npm start //to start server
 ```
 Note: 
 The proxy is currently sending request to each microservice's EC2 instance. However, the instance is not guaranteed to be on.
+
+## Requirement
+* node v8.15
