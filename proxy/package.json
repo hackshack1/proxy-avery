@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
-  "author": "Jessica Wu",
+  "author": "Avery Neil",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "newrelic": "^6.1.0",
     "path": "^0.12.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
